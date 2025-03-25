@@ -5,9 +5,159 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>GourmeTech</title>
 </head>
 <body>
+<header>
+    <div class="logo">
+        <p> G </p>
+        <h1>Gourme<span>t</span>ech</h1>
+    </div>
+
+    <div class="dark">
+        <input type="checkbox" name="sombre" id="sombre">
+        <label for="sombre" aria-label="Activer le mode sombre">🌙</label>
+    </div>
+    <div>
+        <button aria-expanded="false" aria-label="Ouvrir le menu">
+            <svg viewBox="0 0 100 100" width="40" height="40" >
+                <rect y="7" width="100" height="15"></rect>
+                <rect y="42" width="100" height="15"></rect>
+                <rect y="78" width="100" height="15"></rect>
+            </svg>
+        </button>
+        <!-- navigation -->
+        <nav>
+            <div>
+                <button aria-label="bouton pour fermer le menu en mode mobile">x</button>
+            </div>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Ajouter une recette</a></li>
+                <li><a href="#">Mes favoris</a></li>
+                <li><a href="#">A propos</a></li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<main>
+    <section>
+        <h2>Recherche de recettes et filtres</h2>
+    <form>
+        <input type="text" placeholder="rechercher une recette" aria-label="Rechercher une recette">
+        <button type="submit">Rechercher</button>
+    </form>
+    <fieldset>
+        <h3>Categorie</h3>
+        <ul>
+            <li>
+                <input type="checkbox" id="entree">
+                <label for="entree">entrée</label>
+            </li>
+            <li>
+                <input type="checkbox" id="plat">
+                <label for="plat">Plat</label>
+            </li>
+            <li>
+                <input type="checkbox" id="dessert">
+                <label for="dessert">Dessert</label>
+            </li>
+        </ul>
+
+    </fieldset>
+
+    <fieldset>
+
+        <h3>Temps de préparation</h3>
+        <ul>
+            <li>
+                <input type="checkbox" id="rapide">
+                <label for="rapide">rapide <span>(< 30 min)</span></label>
+            </li>
+            <li>
+                <input type="checkbox" id="moyen">
+                <label for="moyen">Moyen <span>(30-60 min)</span></label>
+            </li>
+            <li>
+                <input type="checkbox" id="long">
+                <label for="long">Long<span>(> 60 min)</span></label>
+            </li>
+        </ul>
+
+    </fieldset>
+
+    <fieldset>
+
+        <h3>Difficultés</h3>
+        <ul>
+            <li>
+                <input type="checkbox" id="facile">
+                <label for="facile">Facile</label>
+            </li>
+            <li>
+                <input type="checkbox" id="medium">
+                <label for="medium">Moyen</label>
+            </li>
+            <li>
+                <input type="checkbox" id="difficile">
+                <label for="difficile">Difficile</label>
+            </li>
+        </ul>
+
+    </fieldset>
+    </section>
+
+    <section>
+        <h2>Recettes</h2>
+        <article>
+
+                <img src="" alt="" >
+            <use xlink:href="assets/icons/sprite.svg#heart" />
+                <h3>Tarte aux pommes</h3>
+
+
+            <span>Dessert</span>
+            <span>60 min</span>
+            <span>Facile</span>
+            <button aria-label="Voir la recette de la tarte aux pommes">Voir la recette</button>
+        </article>
+    </section>
+
+    <div>
+        <div>
+            <p>Navigation</p>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Ajouter une recette</a></li>
+                <li><a href="#">Mes favoris</a></li>
+                <li><a href="#">A propos</a></li>
+
+            </ul>
+        </div>
+
+        <div>
+            <h3>A propos de GourmeTech</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad corporis cum error ex minus odit placeat, quod repudiandae. Porro, reprehenderit.</p>
+
+        </div>
+
+
+    </div>
+</main>
+<footer>
+    © 2025 GourmeTech - tous droits reservés
+</footer>
+
+
+
 
 </body>
 </html>
