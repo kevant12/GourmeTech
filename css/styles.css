@@ -1,6 +1,8 @@
-root{
-    --primary: #e47d21;
+:root{
+    --primary-color: #e47d21;
     --redheart: #e84d3c;
+    --bggris: #f7f1f3;
+    --white : #fff;
     font-family : Arial, Helvetica, sans-serif;
     font-size: 10px;
 }
@@ -12,7 +14,9 @@ img{
     vertical-align: middle;
 }
 body{
+
     header{
+
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -22,10 +26,11 @@ body{
         .logo{
             display: flex;
             align-items: center;
-            color: #e47d21;
+            color: var(--primary-color);
+
 
             h1{
-                font-size: 2rem;
+                font-size: 3.5rem;
                 font-weight:bold;
                 span{
                     text-transform: uppercase
@@ -33,11 +38,13 @@ body{
             }
             p{
                 border: 1px solid transparent;
-                background-color: #e57e22;
+                background-color: var(--primary-color
+                );
                 border-radius: 50%;
-                padding: 10px;
-                margin-right: 10px;
+                padding: 15px;
+margin-right: 5px;
                 color: white;
+                font-size: 1.8rem;
             }
 
         }
@@ -45,13 +52,105 @@ body{
             display :flex;
             align-items: center;
             gap: 10px;
-        }
-        #sombre{
+            padding: 15px;
+            border-radius: 50px;
+            background-color: var(--bggris);
+            font-size: 1.8rem;
+
+            #sombre{
             display: none;
+            }
+
         }
-        nav{
-            display: none;
+        .menu{
+            button{
+                border: none;
+                background-color: var(--white);
+                padding-inline: 0;
+                margin-left: 5px;
+
+            }
+
+            nav{
+                display: none;
+
+            }
         }
+        .menudark{
+            display: flex;
+            align-items: center;
+
+        }
+    }
+
+    main{
+        section{
+            margin-inline: 50px    ;
+            h2{
+                font-size: 2rem;
+                text-align: center;
+                margin-bottom:10px ;
+            }
+            form{
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-content: center;
+                input{
+                    height: 25px;
+                    border-radius: 5px;
+                }
+                button{
+                    background-color: var(--primary-color);
+                    border: none;
+                    border-radius: 30px;
+                    margin-block: 10px;
+                }
+
+            }
+            fieldset{
+                background-color: var(--bggris);
+                margin-top : 10px;
+                span{
+                    display: none;
+                }
+                h3{
+                    font-weight: bold;
+                    margin-block: 5px;
+                    font-size: 2rem;
+                }
+                li{
+                    margin-block: 10px;
+                }
+                li>label{
+                    font-weight: lighter;
+                    font-size: 1.5rem;
+
+                }
+            }
+        }
+        .recettes{
+        h2{
+            font-size: 2.5rem;
+            margin-block: 10px;
+        }
+            article{
+                border: 1px solid black;
+                box-shadow: 5px 5px 5px var(--bggris);
+
+                h3{
+                    font-size: 2.2rem;
+                    margin-block: 8px;
+                }
+                span{
+                    align-items: center;
+                    text-align: center;
+                }
+                button{
+                    justify-items: center;
+                }
+            }
+        }
+
     }
 
 }

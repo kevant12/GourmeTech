@@ -15,14 +15,14 @@
         <p> G </p>
         <h1>Gourme<span>t</span>ech</h1>
     </div>
-
+<div class="menudark">
     <div class="dark">
         <input type="checkbox" name="sombre" id="sombre">
         <label for="sombre" aria-label="Activer le mode sombre">🌙</label>
     </div>
-    <div>
+    <div class="menu">
         <button aria-expanded="false" aria-label="Ouvrir le menu">
-            <svg viewBox="0 0 100 100" width="40" height="40" >
+            <svg viewBox="0 0 100 100" width="40" height="30" >
                 <rect y="7" width="100" height="15"></rect>
                 <rect y="42" width="100" height="15"></rect>
                 <rect y="78" width="100" height="15"></rect>
@@ -42,18 +42,15 @@
             </ul>
         </nav>
     </div>
+</div>
 </header>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 <main>
     <section>
         <h2>Recherche de recettes et filtres</h2>
     <form>
         <input type="text" placeholder="rechercher une recette" aria-label="Rechercher une recette">
-        <button type="submit">Rechercher</button>
+        <button type="submit" aria-label="Lancer la recherche">Rechercher</button>
     </form>
     <fieldset>
         <h3>Categorie</h3>
@@ -76,7 +73,7 @@
 
     <fieldset>
 
-        <h3>Temps de préparation</h3>
+        <h3>Temps<span> de préparation</span></h3>
         <ul>
             <li>
                 <input type="checkbox" id="rapide">
@@ -103,7 +100,7 @@
                 <label for="facile">Facile</label>
             </li>
             <li>
-                <input type="checkbox" id="medium">
+                <input type="checkbox" id="medium" name="">
                 <label for="medium">Moyen</label>
             </li>
             <li>
@@ -115,12 +112,13 @@
     </fieldset>
     </section>
 
-    <section>
+    <section class="recettes">
         <h2>Recettes</h2>
         <article>
 
-                <img src="" alt="" >
-            <use xlink:href="assets/icons/sprite.svg#heart" />
+                <img src="assets/image/tarte-aux-pommes.jpg" alt="tarte aux pommes sur une table" >
+            <object data="assets/icons/sprite.svg></object>
+
                 <h3>Tarte aux pommes</h3>
 
 
@@ -153,7 +151,7 @@
     </div>
 </main>
 <footer>
-    © 2025 GourmeTech - tous droits reservés
+    © 2025 <a href="a-propos.html">GourmeTech</a> - tous droits reservés
 </footer>
 
 
