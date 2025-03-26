@@ -15,11 +15,24 @@
         <p> G </p>
         <h1>Gourme<span>t</span>ech</h1>
     </div>
+    <nav>
+        <div>
+            <button aria-label="bouton pour fermer le menu en mode mobile">x</button>
+        </div>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Ajouter une recette</a></li>
+            <li><a href="#">Mes favoris</a></li>
+            <li><a href="#">A propos</a></li>
+
+        </ul>
+    </nav>
 <div class="menudark">
     <div class="dark">
         <input type="checkbox" name="sombre" id="sombre">
         <label for="sombre" aria-label="Activer le mode sombre">🌙</label>
     </div>
+
     <div class="menu">
         <button aria-expanded="false" aria-label="Ouvrir le menu">
             <svg viewBox="0 0 100 100" width="40" height="30" >
@@ -29,18 +42,7 @@
             </svg>
         </button>
         <!-- navigation -->
-        <nav>
-            <div>
-                <button aria-label="bouton pour fermer le menu en mode mobile">x</button>
-            </div>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Ajouter une recette</a></li>
-                <li><a href="#">Mes favoris</a></li>
-                <li><a href="#">A propos</a></li>
 
-            </ul>
-        </nav>
     </div>
 </div>
 </header>
@@ -52,6 +54,7 @@
         <input type="text" placeholder="rechercher une recette" aria-label="Rechercher une recette">
         <button type="submit" aria-label="Lancer la recherche">Rechercher</button>
     </form>
+        <div class="filtres">
     <fieldset>
         <h3>Categorie</h3>
         <ul>
@@ -110,10 +113,12 @@
         </ul>
 
     </fieldset>
+        </div>
     </section>
 
     <section class="recettes">
         <h2>Recettes</h2>
+        <div class="recette">
         <article>
 
                 <img src="assets/image/tarte-aux-pommes.jpg" alt="tarte aux pommes sur une table" >
@@ -121,29 +126,48 @@
 
                 <h3>Tarte aux pommes</h3>
 
-<div>
+            <div>
             <span>Dessert</span>
             <span>60 min</span>
             <span>Facile</span>
-</div>
+            </div>
+
             <button class="voir" aria-label="Voir la recette de la tarte aux pommes">Voir la recette</button>
             <button class="favoris" aria-label="mettre la recette tarte aux pommes en favoris">🤍</button>
         </article>
         <article>
 
-            <img src="" alt="" >
+            <img src="assets/image/Ratatouille-recipe.jpg" alt="ratatouille colorée sur une table" >
 
 
             <h3>Ratatouille</h3>
 
             <div>
-                <span></span>
-                <span></span>
-                <span></span>
+                <span>Plat</span>
+                <span>45min</span>
+                <span>Moyen</span>
             </div>
             <button class="voir" aria-label="">Voir la recette</button>
             <button class="favoris" aria-label="">🤍</button>
         </article>
+
+            <article>
+
+                <img src="assets/image/Soupe-bol.jpg" alt="velouté de seppes" >
+
+
+                <h3>velouté</h3>
+
+                <div>
+                    <span>Entrée</span>
+                    <span>30min</span>
+                    <span>Facile</span>
+                </div>
+                <button class="voir" aria-label="">Voir la recette</button>
+                <button class="favoris" aria-label="">🤍</button>
+            </article>
+
+        </div>
     </section>
 </main>
 <footer>
@@ -161,14 +185,14 @@
 
         <div>
             <h3>A propos de GourmeTech</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad corporis cum error ex minus odit placeat, quod repudiandae. Porro, reprehenderit.</p>
+            <p>GourmeTech est une plateforme de recettes culinaires interactives developpee dans le cadre d'un projet pedagogique</p>
 
         </div>
 
 
     </div>
 
-<div>
+<div class="mentions-legales">
     © 2025 <a href="a-propos.html">GourmeTech</a> - tous droits reservés
 </div>
     </footer>

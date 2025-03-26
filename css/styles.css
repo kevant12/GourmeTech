@@ -14,10 +14,11 @@
 img{
     width: 100%;
     vertical-align: middle;
+    aspect-ratio: 1;
 }
-body{
+body {
 
-    header{
+    header {
 
 
         display: flex;
@@ -26,33 +27,36 @@ body{
         padding-inline: 15px;
         margin-block: 10px;
 
-        .logo{
+        .logo {
             display: flex;
             align-items: center;
             color: var(--primary-color);
 
 
-            h1{
+            h1 {
                 font-size: 3.5rem;
-                font-weight:bold;
-                span{
+                font-weight: bold;
+
+                span {
                     text-transform: uppercase
                 }
             }
-            p{
+
+            p {
                 border: 1px solid transparent;
                 background-color: var(--primary-color
                 );
                 border-radius: 50%;
                 padding: 15px;
-margin-right: 5px;
+                margin-right: 5px;
                 color: white;
                 font-size: 1.8rem;
             }
 
         }
-        .dark{
-            display :flex;
+
+        .dark {
+            display: flex;
             align-items: center;
             gap: 10px;
             padding: 15px;
@@ -60,13 +64,17 @@ margin-right: 5px;
             background-color: var(--bggris);
             font-size: 1.8rem;
 
-            #sombre{
-            display: none;
+            #sombre {
+                display: none;
             }
 
         }
-        .menu{
-            button{
+        nav {
+            display: none;
+
+        }
+        .menu {
+            button {
                 border: none;
                 background-color: var(--white);
                 padding-inline: 0;
@@ -74,157 +82,326 @@ margin-right: 5px;
 
             }
 
-            nav{
-                display: none;
 
-            }
         }
-        .menudark{
+
+        .menudark {
             display: flex;
             align-items: center;
 
         }
     }
 
-    main{
-        section{
-            margin-inline: 50px    ;
-            h2{
+    main {
+        section {
+            margin-inline: 50px;
+
+            h2 {
                 font-size: 2rem;
                 text-align: center;
-                margin-bottom:10px ;
+                margin-bottom: 10px;
             }
-            form{
+
+            form {
                 display: grid;
                 grid-template-columns: 1fr;
                 justify-content: center;
-                input{
+                margin-block: 20px;
+
+
+                input {
                     height: 40px;
                     border-radius: 5px;
                 }
-                button{
+
+                button {
                     background-color: var(--primary-color);
                     border: none;
                     border-radius: 30px;
                     margin-block: 10px;
+                    color: var(--white
+                    );
                 }
 
             }
-            fieldset{
+
+            fieldset {
                 background-color: var(--bggris);
-                margin-top : 10px;
-                span{
+                margin-top: 10px;
+
+                span {
                     display: none;
                 }
-                h3{
+
+                h3 {
                     font-weight: bold;
                     margin-block: 5px;
                     font-size: 2rem;
                 }
-                li{
+
+                li {
                     margin-block: 10px;
                 }
-                li>label{
+
+                li > label {
                     font-weight: lighter;
                     font-size: 1.5rem;
 
                 }
             }
         }
-        .recettes{
-        h2{
-            font-size: 2.5rem;
-            margin-block: 10px;
-        }
-            article{
+
+        .recettes {
+            h2 {
+                font-size: 2.5rem;
+                margin-block: 10px;
+            }
+
+            article {
                 position: relative;
                 display: flex;
-                flex-direction: column  ;
+                flex-direction: column;
                 align-items: center;
-                border: 1px solid black;
-                box-shadow: 3px 3px 3px black;
+                border: 1px solid grey;
+                box-shadow: 1px 1px 1px grey;
                 text-align: center;
+                margin-block: 20px;
+                border-radius: 5%;
+                overflow: hidden;
 
-                h3{
+                h3 {
                     font-size: 2.2rem;
                     margin-block: 8px;
                     text-align: left;
                 }
-                div{
+
+                div {
 
 
-                    span{
+                    span {
                         margin-inline: 10px;
                         border-radius: 50%;
                         padding: 5px;
                         color: var(--white);
-                        &:first-of-type{
-                        background-color: var(--primary-color);
-                    }
-                        &:nth-of-type(2){
+
+                        &:first-of-type {
+                            background-color: var(--primary-color);
+                        }
+
+                        &:nth-of-type(2) {
                             background-color: var(--green);
                         }
 
-                        &:last-of-type{
+                        &:last-of-type {
                             background-color: var(--blue);
                         }
 
+                    }
                 }
+
+                button.voir {
+                    width: 80%;
+
+                    background-color: var(--primary-color);
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    text-align: center;
+                    justify-content: center;
+                    margin-block: 10px;
+                    padding-block: 20px;
+
                 }
-            button.voir{
-                width: 80%;
 
-                background-color: var(--primary-color);
-                color: white;
-                border: none;
-                cursor: pointer;
-                text-align: center;
-                justify-content: center;
-                margin-block: 10px;
-                padding-block: 20px;
-
-            }
-                button.favoris{
+                button.favoris {
                     position: absolute;
                     top: 0;
                     right: 0;
                     margin-right: 20px;
                     margin-top: 20px;
                     border-radius: 50%;
-                    background-color: black;
+                    background-color: var(--bggris);
                     cursor: pointer;
+                    font-size: 3rem;
+                    padding: 2.5rem;
+
                 }
             }
         }
 
 
-        }
     }
-footer{
-.a-propos {
-    display: grid;
-    grid-template-columns: 1fr;
-    list-style: none;
-    text-align: center;
-    div {
-        text-decoration: none;
-        margin-top: 20px;
-        list-style: none;
-        h3 {
-            color: var(--primary-color);
-            font-size: 2.2rem;
+
+    footer {
+        margin-inline: 50px;
+        .a-propos {
+
+            display: grid;
+            grid-template-columns: 1fr;
+            list-style: none;
+            text-align: center;
+
+            div {
+
+                margin-top: 20px;
+                list-style: none;
+
+                h3 {
+                    color: var(--primary-color);
+                    font-size: 2.2rem;
+                    margin-block: 20px;
+                }
+
+                ul {
+
+
+                    li {
+                        margin-top: 10px;
+
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                }
+
+                &:last-of-type {
+                    p {
+                        margin-block: 20px;
+                    }
+                }
+
+            }
+
         }
-        a{
+        .mentions-legales{
+            text-align: center;
+            padding-block: 20px;
+            border-top: 2px solid var(--bggris);
+            font-weight: lighter;
+
+            color: darkgrey;
+            a{
                 text-decoration: none;
-            color: black;
+                color: darkgrey;
 
-
-        }
-
-        &:first-of-type {
-
-
+                :hover{
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
+@media (min-width: 758px) {
+
+    body{
+        main{
+            section{
+                form{
+
+                    display: grid;
+                    grid-template-columns: 4fr 1fr;
+                    align-items: center;
+                    button{
+                        border-radius: 0;
+                        height: 44px;
+                    }
+
+                }
+                fieldset {
+                    ul{
+                        display: flex;
+                        flex-direction: row;
+                        li{
+                            margin-left: 13px;
+                        }
+                    }
+                }
+            }
+            .recettes {
+                .recette{
+                display: grid;
+                grid-template-columns: 1fr 1fr ;
+                    gap: 20px;
+
+                }
+            }
+        }
+
+    }
+}
+@media (min-width: 900px) {
+    body{
+        margin-inline: 20px;
+        header{
+            h1{
+                font-size: 2rem;
+            }
+            nav{
+                display: block;
+                ul{
+                    display:flex;
+                    gap: 20px;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-size: 2rem;
+                        font-weight: bold;
+                    }
+                }
+
+                button {
+                    display: none;
+                }
+            }
+            .menu{
+                display: none;
+            }
+        }
+        main {
+            .filtres{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 20px;
+
+                fieldset {
+
+                    ul{
+                        display: grid;
+                        grid-template-columns: 1fr;
+
+                    }
+                    span{
+
+                            display: flex;
+
+
+                    }
+                }
+            }
+
+            .recettes {
+
+                .recette {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+
+
+                    article {
+                        flex-basis: calc(33% - 14px);
+                    }
+
+
+                }
+            }
+        }
+        footer {
+            .a-propos{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                text-align: left;
+                margin-bottom: 2rem;
+            }
+        }
+    }
 }
