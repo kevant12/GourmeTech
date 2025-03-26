@@ -43,6 +43,21 @@ Et voilà !  Le site web GourmeTech devrait s'afficher dans votre navigateur.
 
 ## Structure du projet
 
+├── index.html       # Page d'accueil
+├── recette.html     # Template recette
+├── favoris.html     # Recettes favorites
+├── a-propos.html    # À propos du site
+
+├── css/
+│   └── styles.css   # Styles
+
+├── js/
+│   ├── scripts.js   # Script principal
+│   └── autres_fichiers.js # Scripts additionnels
+
+└── assets/
+    ├── images/      # Images recettes
+    └── icons/       # Icônes
 
 ## Personnalisation (Optionnel)
 
@@ -56,7 +71,7 @@ Si vous souhaitez modifier le site, vous pouvez éditer les fichiers HTML, CSS e
 
 ## Crédits
 
-Kevin Antunes - jeSuisPasUnGarconFacile@cegetel.com  / Mon profil GitHub : https://github.com/kevant12]
+Kevin Antunes - jeSuisPasUnGarconFacile@cegetel.com  / Mon profil GitHub : https://github.com/kevant12
 
 ## Licence
 
