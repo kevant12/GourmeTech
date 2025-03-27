@@ -54,6 +54,7 @@ body {
             }
 
         }
+
         nav {
             display: none;
 
@@ -211,7 +212,8 @@ body {
                     justify-content: center;
                     margin-block: 10px;
                     padding-block: 20px;
-                    a{
+
+                    a {
                         text-decoration: none;
                         color: var(--white);
                     }
@@ -239,6 +241,7 @@ body {
 
     footer {
         margin-inline: 50px;
+
         .a-propos {
 
             display: grid;
@@ -279,134 +282,183 @@ body {
             }
 
         }
-        .mentions-legales{
+
+        .mentions-legales {
             text-align: center;
             padding-block: 20px;
             border-top: 2px solid var(--bggris);
             font-weight: lighter;
 
             color: darkgrey;
-            a{
+
+            a {
                 text-decoration: none;
                 color: darkgrey;
 
-                :hover{
+                :hover {
                     cursor: pointer;
                 }
             }
         }
     }
-}
-@media (min-width: 758px) {
 
-    body{
-        main{
-            section{
-                form{
+    .formulaire {
+        text-align: center;
+        padding: 20px;
 
-                    display: grid;
-                    grid-template-columns: 4fr 1fr;
-                    align-items: center;
-                    button{
-                        border-radius: 0;
-                        height: 44px;
-                    }
+        background-color: var(--bggris);
 
-                }
-                fieldset {
-                    ul{
-                        display: flex;
-                        flex-direction: row;
-                        li{
-                            margin-left: 13px;
-                        }
-                    }
-                }
-            }
-            .recettes {
-                .recette{
-                display: grid;
-                grid-template-columns: 1fr 1fr ;
-                    gap: 20px;
 
-                }
-            }
+        h3 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-block: 20px;
+        }
+
+        input {
+            width: 50%;
+
+        }
+
+        textarea {
+            width: 50%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            margin-top: 10px;
+
         }
 
     }
 }
-@media (min-width: 900px) {
-    body{
-        margin-inline: 20px;
-        header{
-            h1{
-                font-size: 2rem;
-            }
-            nav{
-                display: block;
-                ul{
-                    display:flex;
-                    gap: 20px;
-                    a{
-                        text-decoration: none;
-                        color: black;
-                        font-size: 2rem;
-                        font-weight: bold;
+
+
+
+    @media (min-width: 758px) {
+
+        body {
+            main {
+                section {
+                    form {
+
+                        display: grid;
+                        grid-template-columns: 4fr 1fr;
+                        align-items: center;
+
+                        button {
+                            border-radius: 0;
+                            height: 44px;
+                        }
+
+                    }
+
+                    fieldset {
+                        ul {
+                            display: flex;
+                            flex-direction: row;
+
+                            li {
+                                margin-left: 13px;
+                            }
+                        }
                     }
                 }
 
-                button {
+                .recettes {
+                    .recette {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 20px;
+
+                    }
+                }
+            }
+
+        }
+    }
+    @media (min-width: 900px) {
+        body {
+            margin-inline: 20px;
+
+            header {
+                h1 {
+                    font-size: 2rem;
+                }
+
+                nav {
+                    display: block;
+
+                    ul {
+                        display: flex;
+                        gap: 20px;
+
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            font-size: 2rem;
+                            font-weight: bold;
+                        }
+                    }
+
+                    button {
+                        display: none;
+                    }
+                }
+
+                .menu {
                     display: none;
                 }
             }
-            .menu{
-                display: none;
-            }
-        }
-        main {
-            .filtres{
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 20px;
 
-                fieldset {
+            main {
+                .filtres {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 20px;
 
-                    ul{
-                        display: grid;
-                        grid-template-columns: 1fr;
+                    fieldset {
 
-                    }
-                    span{
+                        ul {
+                            display: grid;
+                            grid-template-columns: 1fr;
+
+                        }
+
+                        span {
 
                             display: flex;
 
 
+                        }
+                    }
+                }
+
+                .recettes {
+
+                    .recette {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+
+
+                        article {
+                            flex-basis: calc(33% - 14px);
+                        }
+
+
                     }
                 }
             }
 
-            .recettes {
-
-                .recette {
+            footer {
+                .a-propos {
                     display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-
-
-                    article {
-                        flex-basis: calc(33% - 14px);
-                    }
-
-
+                    grid-template-columns: 1fr 1fr;
+                    text-align: left;
+                    margin-bottom: 2rem;
                 }
-            }
-        }
-        footer {
-            .a-propos{
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                text-align: left;
-                margin-bottom: 2rem;
             }
         }
     }
-}
+

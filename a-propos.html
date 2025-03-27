@@ -45,4 +45,56 @@
 
         </div>
     </div>
+
+
 </header>
+<footer>
+    <div class="a-propos">
+        <div>
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Ajouter une recette</a></li>
+            <li><a href="#">Mes favoris</a></li>
+            <li><a href="#">A propos</a></li>
+
+        </ul>
+    </div>
+
+    <div >
+        <h3>A propos de GourmeTech</h3>
+        <p>GourmeTech est une plateforme de recettes culinaires interactives developpee dans le cadre d'un projet pedagogique</p>
+
+    </div>
+    </div>
+    <form action="" class="formulaire">
+        <h3>Contact</h3>
+        <div>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required aria-label="Votre nom">
+        </div>
+
+        <div>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required aria-label="Votre prénom">
+        </div>
+
+        <div>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required aria-label="Votre adresse email">
+        </div>
+
+        <div>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message"  required aria-label="Votre message"></textarea>
+        </div>
+
+        <div>
+            <input type="checkbox" id="rgpd" name="rgpd" required>
+            <label for="rgpd" aria-label="J'accepte que mes données soient utilisées conformément à la politique de confidentialité.">J'accepte que mes données soient utilisées conformément à la politique de confidentialité.</label>
+        </div>
+
+        <button type="submit" aria-label="Envoyer le formulaire">Envoyer</button>
+    </form>
+
+</footer>
