@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang=fr>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>GourmeTech</title>
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <p> G </p>
+        <h1>Gourme<span>t</span>ech</h1>
+    </div>
+    <nav class="show">
+        <div>
+            <button aria-label="bouton pour fermer le menu en mode mobile">x</button>
+        </div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="ajouter-recette.html">Ajouter une recette</a></li>
+            <li><a href="favoris.html">Mes favoris</a></li>
+            <li><a href="a-propos.html">A propos</a></li>
+
+        </ul>
+    </nav>
+    <div class="menudark">
+        <div class="dark">
+            <input type="checkbox" name="sombre" id="sombre">
+            <label for="sombre" aria-label="Activer le mode sombre">🌙</label>
+        </div>
+
+        <div class="menu">
+            <button aria-expanded="false" aria-label="Ouvrir le menu">
+                <svg viewBox="0 0 100 100" width="40" height="30" >
+                    <rect y="7" width="100" height="15"></rect>
+                    <rect y="42" width="100" height="15"></rect>
+                    <rect y="78" width="100" height="15"></rect>
+                </svg>
+            </button>
+            <!-- navigation -->
+
+        </div>
+    </div>
+</header>
+<main>
+    <section>
+
+
+    <div class="recette">
+        <article id="tarte-aux-pommes">
+            <h2>tarte aux pommes</h2>
+            <img src="assets/image/tarte-aux-pommes.jpg" alt="tarte aux pommes sur une table" >
+            <fieldset>
+                <legend>Ingredients</legend>
+                <ul>
+                    <li>4 pommes</li>
+                    <li>60 g de beurre doux</li>
+                    <li>120 g de farine de blé</li>
+                    <li>1 jaune d'oeuf</li>
+                    <li>1 cuillère à café de sucre / 1 pincée de sel</li>
+                </ul>
+            </fieldset>
+
+        </article>
+        <article id="ratatouille">
+            <h2>Ratatouille</h2>
+            <img src="assets/image/Ratatouille-recipe.jpg" alt="ratatouille colorée sur une table" >
+            <fieldset>
+                <legend>Ingredients</legend>
+                <ul>
+                    <li>1 gros oignon, haché</li>
+                    <li>225 g (1/2 lb) de champignons blancs, coupés en quartiers</li>
+                    <li>1 aubergine, coupée en cubes</li>
+                    <li>2 poivrons jaunes, épépinés et coupés en cubes</li>
+                    <li>2 courgettes, coupées en cubes</li>
+                </ul>
+            </fieldset>
+        </article>
+        <article id="veloute">
+            <h2>velouté</h2>
+            <img src="assets/image/Soupe-bol.jpg" alt="velouté de seppes" >
+            <fieldset>
+                <legend>Ingredients</legend>
+                <ul>
+                    <li>1 gros oignon, haché</li>
+                    <li>225 g (1/2 lb) de champignons blancs, coupés en quartiers</li>
+                    <li>1 aubergine, coupée en cubes</li>
+                    <li>2 poivrons jaunes, épépinés et coupés en cubes</li>
+                    <li>2 courgettes, coupées en cubes</li>
+                </ul>
+            </fieldset>
+        </article>
+    </div>
+    </section>
+</main>

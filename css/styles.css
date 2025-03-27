@@ -54,6 +54,10 @@ body {
             }
 
         }
+        nav {
+            display: none;
+
+        }
 
         .dark {
             display: flex;
@@ -69,10 +73,7 @@ body {
             }
 
         }
-        nav {
-            display: none;
 
-        }
         .menu {
             button {
                 border: none;
@@ -210,6 +211,10 @@ body {
                     justify-content: center;
                     margin-block: 10px;
                     padding-block: 20px;
+                    a{
+                        text-decoration: none;
+                        color: var(--white);
+                    }
 
                 }
 
