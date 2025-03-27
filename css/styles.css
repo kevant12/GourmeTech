@@ -233,6 +233,7 @@ body {
                     padding: 2.5rem;
 
                 }
+
             }
         }
 
@@ -291,7 +292,7 @@ body {
 
             color: darkgrey;
 
-            a {
+            a{
                 text-decoration: none;
                 color: darkgrey;
 
@@ -330,7 +331,15 @@ body {
             margin-top: 10px;
 
         }
-
+button{
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 15px;
+}
     }
 }
 
@@ -372,13 +381,21 @@ body {
                         grid-template-columns: 1fr 1fr;
                         gap: 20px;
 
+                        article {
+                            flex-basis: calc(33% - 14px);
+                            button.favoris{
+                                font-size: 2.5rem;
+                                padding: 2rem;
+                            }
+                        }
+
                     }
                 }
             }
 
         }
     }
-    @media (min-width: 900px) {
+    @media (min-width: 1024px) {
         body {
             margin-inline: 20px;
 
@@ -444,6 +461,10 @@ body {
 
                         article {
                             flex-basis: calc(33% - 14px);
+                            button.favoris{
+                                font-size: 2rem;
+                                padding: 1.5rem;
+                            }
                         }
 
 
