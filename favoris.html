@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/favori.js" defer></script>
     <title>GourmeTech</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
         </div>
         <ul>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="ajouter-recette.html">Ajouter une recette</a></li>
+
             <li><a href="favoris.html">Mes favoris</a></li>
             <li><a href="a-propos.html">A propos</a></li>
 
@@ -46,10 +47,11 @@
         </div>
     </div>
 </header>
+
 <main>
 <section class="recettes">
     <h2>Favoris</h2>
-    <div class="recette">
+    <div class="recette" id="container-favoris">
         <article>
 
             <img src="assets/image/tarte-aux-pommes.jpg" alt="tarte aux pommes sur une table" >
@@ -101,4 +103,30 @@
     </div>
 </section>
 </main>
+<footer>
+    <div class="a-propos">
+        <div>
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+
+                <li><a href="#">Mes favoris</a></li>
+                <li><a href="#">A propos</a></li>
+
+            </ul>
+        </div>
+
+        <div>
+            <h3>A propos de GourmeTech</h3>
+            <p>GourmeTech est une plateforme de recettes culinaires interactives developpee dans le cadre d'un projet pedagogique</p>
+
+        </div>
+
+
+    </div>
+
+    <div class="mentions-legales">
+        © 2025 <a href="a-propos.html">GourmeTech</a> - tous droits reservés
+    </div>
+</footer>
 </body>
