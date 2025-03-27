@@ -1,37 +1,42 @@
-:root{
+/* Variables globales */
+:root {
     --primary-color: #e47d21;
     --redheart: #e84d3c;
     --bggris: #f7f1f3;
-    --white : #fff;
+    --white: #fff;
     --green: #2eca6d;
     --blue: #3297d9;
-    font-family : Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
 }
-*{
 
+/* Reset des styles */
+* {
+    /* Aucune règle définie */
 }
-img{
+
+/* Style des images */
+img {
     width: 100%;
     vertical-align: middle;
     aspect-ratio: 1;
 }
+
+/* Structure principale */
 body {
-
+    /* Header */
     header {
-
-
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-inline: 15px;
         margin-block: 10px;
 
+        /* Logo */
         .logo {
             display: flex;
             align-items: center;
             color: var(--primary-color);
-
 
             h1 {
                 font-size: 3.5rem;
@@ -44,22 +49,21 @@ body {
 
             p {
                 border: 1px solid transparent;
-                background-color: var(--primary-color
-                );
+                background-color: var(--primary-color);
                 border-radius: 50%;
                 padding: 15px;
                 margin-right: 5px;
                 color: white;
                 font-size: 1.8rem;
             }
-
         }
 
+        /* Navigation */
         nav {
             display: none;
-
         }
 
+        /* Thème sombre */
         .dark {
             display: flex;
             align-items: center;
@@ -72,44 +76,42 @@ body {
             #sombre {
                 display: none;
             }
-
         }
 
+        /* Menu mobile */
         .menu {
             button {
                 border: none;
                 background-color: var(--white);
                 padding-inline: 0;
                 margin-left: 5px;
-
             }
-
-
         }
 
         .menudark {
             display: flex;
             align-items: center;
-
         }
     }
 
+    /* Contenu principal */
     main {
         section {
             margin-inline: 50px;
 
+            /* Titres */
             h2 {
                 font-size: 2rem;
                 text-align: center;
                 margin-bottom: 10px;
             }
 
+            /* Formulaire de recherche */
             form {
                 display: grid;
                 grid-template-columns: 1fr;
                 justify-content: center;
                 margin-block: 20px;
-
 
                 input {
                     height: 40px;
@@ -121,12 +123,11 @@ body {
                     border: none;
                     border-radius: 30px;
                     margin-block: 10px;
-                    color: var(--white
-                    );
+                    color: var(--white);
                 }
-
             }
 
+            /* Filtres */
             fieldset {
                 background-color: var(--bggris);
                 margin-top: 10px;
@@ -148,11 +149,11 @@ body {
                 li > label {
                     font-weight: lighter;
                     font-size: 1.5rem;
-
                 }
             }
         }
 
+        /* Section des recettes */
         .recettes {
             h2 {
                 font-size: 2.5rem;
@@ -177,9 +178,8 @@ body {
                     text-align: left;
                 }
 
+                /* Tags des recettes */
                 div {
-
-
                     span {
                         margin-inline: 10px;
                         border-radius: 50%;
@@ -197,13 +197,12 @@ body {
                         &:last-of-type {
                             background-color: var(--blue);
                         }
-
                     }
                 }
 
+                /* Boutons des recettes */
                 button.voir {
                     width: 80%;
-
                     background-color: var(--primary-color);
                     color: white;
                     border: none;
@@ -217,7 +216,6 @@ body {
                         text-decoration: none;
                         color: var(--white);
                     }
-
                 }
 
                 button.favoris {
@@ -231,27 +229,22 @@ body {
                     cursor: pointer;
                     font-size: 3rem;
                     padding: 2.5rem;
-
                 }
-
             }
         }
-
-
     }
 
+    /* Pied de page */
     footer {
         margin-inline: 50px;
 
         .a-propos {
-
             display: grid;
             grid-template-columns: 1fr;
             list-style: none;
             text-align: center;
 
             div {
-
                 margin-top: 20px;
                 list-style: none;
 
@@ -262,8 +255,6 @@ body {
                 }
 
                 ul {
-
-
                     li {
                         margin-top: 10px;
 
@@ -279,20 +270,18 @@ body {
                         margin-block: 20px;
                     }
                 }
-
             }
-
         }
 
+        /* Mentions légales */
         .mentions-legales {
             text-align: center;
             padding-block: 20px;
             border-top: 2px solid var(--bggris);
             font-weight: lighter;
-
             color: darkgrey;
 
-            a{
+            a {
                 text-decoration: none;
                 color: darkgrey;
 
@@ -303,12 +292,11 @@ body {
         }
     }
 
+    /* Style du formulaire de contact */
     .formulaire {
         text-align: center;
         padding: 20px;
-
         background-color: var(--bggris);
-
 
         h3 {
             color: var(--primary-color);
@@ -318,7 +306,6 @@ body {
 
         input {
             width: 50%;
-
         }
 
         textarea {
@@ -329,157 +316,143 @@ body {
             display: block;
             margin-bottom: 5px;
             margin-top: 10px;
-
         }
-button{
-    background-color: var(--primary-color);
-    color: var(--white);
-    border: none;
-    cursor: pointer;
-    border-radius: 30px;
-    padding: 20px;
-    margin-top: 15px;
-}
+
+        button {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+            padding: 20px;
+            margin-top: 15px;
+        }
     }
 }
 
+/* Media Queries - Tablette */
+@media (min-width: 758px) {
+    body {
+        main {
+            section {
+                form {
+                    display: grid;
+                    grid-template-columns: 4fr 1fr;
+                    align-items: center;
 
-
-    @media (min-width: 758px) {
-
-        body {
-            main {
-                section {
-                    form {
-
-                        display: grid;
-                        grid-template-columns: 4fr 1fr;
-                        align-items: center;
-
-                        button {
-                            border-radius: 0;
-                            height: 44px;
-                        }
-
-                    }
-
-                    fieldset {
-                        ul {
-                            display: flex;
-                            flex-direction: row;
-
-                            li {
-                                margin-left: 13px;
-                            }
-                        }
+                    button {
+                        border-radius: 0;
+                        height: 44px;
                     }
                 }
 
-                .recettes {
-                    .recette {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-                        gap: 20px;
+                fieldset {
+                    ul {
+                        display: flex;
+                        flex-direction: row;
 
-                        article {
-                            flex-basis: calc(33% - 14px);
-                            button.favoris{
-                                font-size: 2.5rem;
-                                padding: 2rem;
-                            }
+                        li {
+                            margin-left: 13px;
                         }
-
                     }
                 }
             }
 
-        }
-    }
-    @media (min-width: 1024px) {
-        body {
-            margin-inline: 20px;
+            .recettes {
+                .recette {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 20px;
 
-            header {
-                h1 {
-                    font-size: 2rem;
-                }
-
-                nav {
-                    display: block;
-
-                    ul {
-                        display: flex;
-                        gap: 20px;
-
-                        a {
-                            text-decoration: none;
-                            color: black;
-                            font-size: 2rem;
-                            font-weight: bold;
+                    article {
+                        flex-basis: calc(33% - 14px);
+                        button.favoris {
+                            font-size: 2.5rem;
+                            padding: 2rem;
                         }
                     }
+                }
+            }
+        }
+    }
+}
 
-                    button {
-                        display: none;
+/* Media Queries - Desktop */
+@media (min-width: 1024px) {
+    body {
+        margin-inline: 20px;
+
+        header {
+            h1 {
+                font-size: 2rem;
+            }
+
+            nav {
+                display: block;
+
+                ul {
+                    display: flex;
+                    gap: 20px;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 2rem;
+                        font-weight: bold;
                     }
                 }
 
-                .menu {
+                button {
                     display: none;
                 }
             }
 
-            main {
-                .filtres {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    gap: 20px;
+            .menu {
+                display: none;
+            }
+        }
 
-                    fieldset {
+        main {
+            .filtres {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 20px;
 
-                        ul {
-                            display: grid;
-                            grid-template-columns: 1fr;
-
-                        }
-
-                        span {
-
-                            display: flex;
-
-
-                        }
-                    }
-                }
-
-                .recettes {
-
-                    .recette {
+                fieldset {
+                    ul {
                         display: grid;
-                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-template-columns: 1fr;
+                    }
 
-
-                        article {
-                            flex-basis: calc(33% - 14px);
-                            button.favoris{
-                                font-size: 2rem;
-                                padding: 1.5rem;
-                            }
-                        }
-
-
+                    span {
+                        display: flex;
                     }
                 }
             }
 
-            footer {
-                .a-propos {
+            .recettes {
+                .recette {
                     display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    text-align: left;
-                    margin-bottom: 2rem;
+                    grid-template-columns: 1fr 1fr 1fr;
+
+                    article {
+                        flex-basis: calc(33% - 14px);
+                        button.favoris {
+                            font-size: 2rem;
+                            padding: 1.5rem;
+                        }
+                    }
                 }
             }
         }
-    }
 
+        footer {
+            .a-propos {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                text-align: left;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
